@@ -1,0 +1,16 @@
+# rust-strictmath
+This crate is inspired by java StrictMath. If obtaining a completely predictable result is more important than running speed, then the crate should be used.This crate provide series of float functions to ensure they could produce the same results across different platforms. These algorithms are available from the well-known network library netlib as the package "Freely Distributable Math Library," fdlibm. 
+
+
+# Usage
+
+Run the following Cargo command in your project directory:
+```
+cargo add rust-strictmath
+```
+
+
+Or add the following line to your Cargo.toml:
+```
+rust-strictmath = "0.1.0"
+```

@@ -1,0 +1,19 @@
+[package]
+name = "rust-strictmath"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["loyispa <litiegen456250@gmail.com>"]
+repository = "https://github.com/loyispa/rust-strictmath"
+homepage = "https://github.com/loyispa/rust-strictmath"
+readme = "README.md"
+description = "Rust portable strict math implemention."
+exclude = [".gitignore"]
+
+build = "build.rs"
+
+[build-dependencies]
+cc = "1.0.79"
+bindgen = "0.65.1"
+[dependencies]
+
