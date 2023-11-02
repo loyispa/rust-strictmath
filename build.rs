@@ -29,6 +29,8 @@ pub fn main() {
         .file(path::Path::new("src/fdlibm/e_cosh.c"))
         .file(path::Path::new("src/fdlibm/w_cosh.c"))
         .file(path::Path::new("src/fdlibm/s_log1p.c"))
+        .file(path::Path::new("src/fdlibm/e_log.c"))
+        .file(path::Path::new("src/fdlibm/w_log.c"))
         .file(path::Path::new("src/fdlibm/s_atan.c"))
         .file(path::Path::new("src/fdlibm/k_tan.c"))
         .file(path::Path::new("src/fdlibm/s_tan.c"))
