@@ -8,8 +8,10 @@ pub use strict_math::cbrt;
 pub use strict_math::cosh;
 pub use strict_math::expm1;
 pub use strict_math::hypot;
+pub use strict_math::log;
 pub use strict_math::log1p;
 pub use strict_math::sinh;
+pub use strict_math::sqrt;
 pub use strict_math::tan;
 pub use strict_math::tanh;
 
@@ -55,6 +57,11 @@ mod test {
         assert_eq!(
             tanh(0.055605003447049994_f64),
             0.055605003447049994_f64.tanh()
+        );
+        assert_eq!(log(0.055605003447049994_f64), 0.055605003447049994_f64.ln());
+        assert_eq!(
+            sqrt(0.055605003447049994_f64),
+            0.055605003447049994_f64.sqrt()
         );
         eprintln!("cbrt:: {}", -0.055605003447049994_f64.cbrt());
         assert_eq!(cbrt(-0.055605003447049994_f64), -0.3816845880251514);

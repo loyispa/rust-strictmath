@@ -484,3 +484,11 @@ pub fn tan(n: f64) -> f64 {
 pub fn tanh(n: f64) -> f64 {
     unsafe { rtanh(n) }
 }
+
+pub fn log(n: f64) -> f64 {
+    unsafe { rlog(n) }
+}
+
+pub fn sqrt(n: f64) -> f64 {
+    unsafe { rsqrt(n) }
+}
