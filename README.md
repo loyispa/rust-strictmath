@@ -25,5 +25,5 @@ cargo add rust-strictmath
 
 Or add the following line to your Cargo.toml:
 ```
-rust-strictmath = "0.1.0"
+rust-strictmath = "0.1.1"
 ```
