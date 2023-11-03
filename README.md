@@ -10,8 +10,10 @@ This crate is inspired by java  [StrictMath](https://github.com/openjdk/jdk/blob
 - cosh
 - expm1
 - hypot
+- log
 - log1p
 - sinh
+- sqrt
 - tan
 - tanh
 
