@@ -1,13 +1,14 @@
-use std::path::PathBuf;
 use std::{env, path};
 
 pub fn main() {
     println!("cargo:rerun-if-changed=src/fdlibm");
 
-    cc::Build::new()
-        .include("src/fdlibm")
+    let mut cfg = cc::Build::new();
+    if env::var("CARGO_CFG_TARGET_ENDIAN").unwrap() == "little" {
+        cfg.define("__LITTLE_ENDIAN", None);
+    }
+    cfg.include("src/fdlibm")
         .define("_IEEE_LIBM", None)
-        .define("__LITTLE_ENDIAN", None)
         .file(path::Path::new("src/fdlibm/w_acos.c"))
         .file(path::Path::new("src/fdlibm/e_acos.c"))
         .file(path::Path::new("src/fdlibm/e_sqrt.c"))
