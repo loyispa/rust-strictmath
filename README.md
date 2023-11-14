@@ -7,11 +7,16 @@ This crate is inspired by java  [StrictMath](https://github.com/openjdk/jdk/blob
 - atan
 - atan2
 - cbrt
+- cos
 - cosh
+- exp
 - expm1
 - hypot
 - log
+- log10
 - log1p
+- pow
+- sin
 - sinh
 - sqrt
 - tan
