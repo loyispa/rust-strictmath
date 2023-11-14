@@ -1,12 +1,15 @@
 #ifndef RFDLIBM_H
 #define RFDLIBM_H
 
+#define _IEEE_LIBM
+
 /*
  * In order to resolve the conflict between fdlibm and compilers
  * (such as keywords and built-in functions), the following
  * function names have to be re-mapped.
  */
 
+#define huge    HUGE_NUMBER
 #define acos    racos
 #define asin    rasin
 #define atan    ratan
